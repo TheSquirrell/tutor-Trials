@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            mainPage
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.3.2/jquery.mobile.structure-1.3.2.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.8.2.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.3.2/jquery.mobile-1.3.2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <link href="mainPage.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="mainPage.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="mainPage" id="mainPage" class="type-interior"
+        data-theme="b" data-add-back-btn="false" data-back-btn-text="Back">
+            <!-- mobilecontainer -->
+            <div data-role="content" id="mainPage_mobilecontainer" name="mobilecontainer" class=" mainPage_mobilecontainer"
+            dsid="mobilecontainer" data-theme="a">
+                <!-- mobilelabel_1 -->
+                <div name="mobilelabel_1" id="mainPage_mobilelabel_1" dsid="mobilelabel_1" data-role="appery_label"
+                class=' mainPage_mobilelabel_1 '>
+                    Fairy Tail Quiz
+                </div>
+                <!-- mobileimage_15 -->
+                <img class=" mainPage_mobileimage_15" src="files/views/assets/image/a_15556_fairy_tail_logo_red_by_salamander_aywt.png"
+                id="mainPage_mobileimage_15" dsid="mobileimage_15" name="mobileimage_15" />
+                <!-- spacer_17 -->
+                <div id="mainPage_spacer_17" dsid="spacer_17" class='mobilespacer mainPage_spacer_17'>
+                </div>
+                <!-- mobilelabel_11 -->
+                <div name="mobilelabel_11" id="mainPage_mobilelabel_11" dsid="mobilelabel_11" data-role="appery_label"
+                class=' mainPage_mobilelabel_11 '>
+                    You Have 3 Lives, You Answer Wrong And You Lose A Life. If You Lose All 3 Lives
+                    You Lose. You Only Have 10 Attempts.
+                </div>
+                <!-- spacer_18 -->
+                <div id="mainPage_spacer_18" dsid="spacer_18" class='mobilespacer mainPage_spacer_18'>
+                </div>
+                <!-- mobilelabel_20 -->
+                <div name="mobilelabel_20" id="mainPage_mobilelabel_20" dsid="mobilelabel_20" data-role="appery_label"
+                class=' mainPage_mobilelabel_20 '>
+                    By David Vincent
+                </div>
+                <!-- spacer_16 -->
+                <div id="mainPage_spacer_16" dsid="spacer_16" class='mobilespacer mainPage_spacer_16'>
+                </div>
+                <!-- startButton -->
+                <a data-role="button" name="startButton" dsid="startButton" class='  mainPage_startButton'
+                id="mainPage_startButton" data-corners="true" x-apple-data-detectors="false" data-mini="false"
+                data-theme="a" tabindex="1">
+                Start
+                </a>
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="Final" id="Final" class="type-interior"
+        data-theme="b" data-add-back-btn="false" data-back-btn-text="Back">
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Final_mobilecontainer" name="mobilecontainer" class=" Final_mobilecontainer"
+            dsid="mobilecontainer" data-theme="b">
+                <!-- mobiletextarea_6 -->
+                <div data-role="fieldcontain" class="Final_mobiletextarea_6 ">
+                    <textarea name="mobiletextarea_6" id="Final_mobiletextarea_6" tabindex="1" dsid="mobiletextarea_6"
+                    data-theme="b" placeholder="" class=' Final_mobiletextarea_6 '>Thanks you for playing this App is not yet completed.
+</textarea>
+                </div>
+                <!-- mobilebutton_7 -->
+                <a data-role="button" name="mobilebutton_7" dsid="mobilebutton_7" class='  Final_mobilebutton_7'
+                id="Final_mobilebutton_7" data-corners="true" x-apple-data-detectors="false" data-mini="false"
+                data-theme="b" tabindex="2">
+                MainMenu
+                </a>
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="Question" id="Question" class="type-interior"
+        data-theme="b" data-add-back-btn="false" data-back-btn-text="Back">
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Question_mobilecontainer" name="mobilecontainer" class=" Question_mobilecontainer"
+            dsid="mobilecontainer" data-theme="a">
+                <!-- mobilelabel_94 -->
+                <div name="mobilelabel_94" id="Question_mobilelabel_94" dsid="mobilelabel_94" data-role="appery_label"
+                class=' Question_mobilelabel_94 '>
+                    10 Questions Good Luck! Tap here to go to the final page!
+                </div>
+                <!-- mobilegrid_44 -->
+                <div class="Question_mobilegrid_44_wrapper">
+                    <table id="Question_mobilegrid_44" class=" Question_mobilegrid_44" dsid="mobilegrid_44"
+                    name="mobilegrid_44" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_44_row_0">
+                            <!-- mobilegridcell_45 -->
+                            <td id="Question_mobilegridcell_45" name="mobilegridcell_45" class="Question_mobilegridcell_45"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_1 -->
+                                    <div name="mobilelabel_1" id="Question_mobilelabel_1" dsid="mobilelabel_1" data-role="appery_label"
+                                    class=' Question_mobilelabel_1 '>
+                                        Question 1:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_46 -->
+                            <td id="Question_mobilegridcell_46" name="mobilegridcell_46" class="Question_mobilegridcell_46"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_49 -->
+                                    <img class=" Question_mobileimage_49" src="files/views/assets/image/fairy-tail-anime-movie-priestess-of-the-phoenix.jpg"
+                                    id="Question_mobileimage_49" dsid="mobileimage_49" name="mobileimage_49" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilelabel_10 -->
+                <div name="mobilelabel_10" id="Question_mobilelabel_10" dsid="mobilelabel_10" data-role="appery_label"
+                class=' Question_mobilelabel_10 '>
+                    What color is Lucy Heartfilia's hair?
+                </div>
+                <!-- mobilegroupedbuttons_158 -->
+                <div data-role="controlgroup" data-type='horizontal' data-mini="true" name="mobilegroupedbuttons_158"
+                id="Question_mobilegroupedbuttons_158" dsid="mobilegroupedbuttons_158" class="Question_mobilegroupedbuttons_158">
+                    <!-- mobilebutton_159 -->
+                    <a data-role="button" name="mobilebutton_159" dsid="mobilebutton_159" class='  Question_mobilebutton_159'
+                    id="Question_mobilebutton_159" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="17" reRender='mobilegroupedbuttons_158'>
+                    Blonde
+                    </a>
+                    <!-- mobilebutton_160 -->
+                    <a data-role="button" name="mobilebutton_160" dsid="mobilebutton_160" class='  Question_mobilebutton_160'
+                    id="Question_mobilebutton_160" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="17" reRender='mobilegroupedbuttons_158'>
+                    Green
+                    </a>
+                    <!-- mobilebutton_161 -->
+                    <a data-role="button" name="mobilebutton_161" dsid="mobilebutton_161" class='  Question_mobilebutton_161'
+                    id="Question_mobilebutton_161" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="17" reRender='mobilegroupedbuttons_158'>
+                    Purple
+                    </a>
+                </div>
+                <!-- mobilegrid_162 -->
+                <div class="Question_mobilegrid_162_wrapper">
+                    <table id="Question_mobilegrid_162" class=" Question_mobilegrid_162" dsid="mobilegrid_162"
+                    name="mobilegrid_162" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_162_row_0">
+                            <!-- mobilegridcell_163 -->
+                            <td id="Question_mobilegridcell_163" name="mobilegridcell_163" class="Question_mobilegridcell_163"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_168 -->
+                                    <div name="mobilelabel_168" id="Question_mobilelabel_168" dsid="mobilelabel_168"
+                                    data-role="appery_label" class=' Question_mobilelabel_168 '>
+                                        Answered:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_164 -->
+                            <td id="Question_mobilegridcell_164" name="mobilegridcell_164" class="Question_mobilegridcell_164"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- answer1 -->
+                                    <div name="answer1" id="Question_answer1" dsid="answer1" data-role="appery_label"
+                                    class=' Question_answer1 '>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_50 -->
+                <div class="Question_mobilegrid_50_wrapper">
+                    <table id="Question_mobilegrid_50" class=" Question_mobilegrid_50" dsid="mobilegrid_50"
+                    name="mobilegrid_50" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_50_row_0">
+                            <!-- mobilegridcell_51 -->
+                            <td id="Question_mobilegridcell_51" name="mobilegridcell_51" class="Question_mobilegridcell_51"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_41 -->
+                                    <div name="mobilelabel_41" id="Question_mobilelabel_41" dsid="mobilelabel_41" data-role="appery_label"
+                                    class=' Question_mobilelabel_41 '>
+                                        Question 2:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_52 -->
+                            <td id="Question_mobilegridcell_52" name="mobilegridcell_52" class="Question_mobilegridcell_52"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_55 -->
+                                    <img class=" Question_mobileimage_55" src="files/views/assets/image/tumblr_m83ot3t3S61r1ub01o2_r2_500.jpg"
+                                    id="Question_mobileimage_55" dsid="mobileimage_55" name="mobileimage_55" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilelabel_73 -->
+                <div name="mobilelabel_73" id="Question_mobilelabel_73" dsid="mobilelabel_73" data-role="appery_label"
+                class=' Question_mobilelabel_73 '>
+                    Where is Gray's symbol located?
+                </div>
+                <!-- mobilegroupedbuttons_56 -->
+                <div data-role="controlgroup" data-type='horizontal' data-mini="true" name="mobilegroupedbuttons_56"
+                id="Question_mobilegroupedbuttons_56" dsid="mobilegroupedbuttons_56" class="Question_mobilegroupedbuttons_56">
+                    <!-- Button1Answer2 -->
+                    <a data-role="button" name="Button1Answer2" dsid="Button1Answer2" class='  Question_Button1Answer2'
+                    id="Question_Button1Answer2" data-corners="true" x-apple-data-detectors="false" data-theme="a"
+                    tabindex="6" reRender='mobilegroupedbuttons_56'>
+                    Left; Chest
+                    </a>
+                    <!-- Button2Answer2 -->
+                    <a data-role="button" name="Button2Answer2" dsid="Button2Answer2" class='  Question_Button2Answer2'
+                    id="Question_Button2Answer2" data-corners="true" x-apple-data-detectors="false" data-theme="a"
+                    tabindex="6" reRender='mobilegroupedbuttons_56'>
+                    Right; Chest
+                    </a>
+                    <!-- Button3Answer2 -->
+                    <a data-role="button" name="Button3Answer2" dsid="Button3Answer2" class='  Question_Button3Answer2'
+                    id="Question_Button3Answer2" data-corners="true" x-apple-data-detectors="false" data-theme="a"
+                    tabindex="6" reRender='mobilegroupedbuttons_56'>
+                    Back
+                    </a>
+                </div>
+                <!-- mobilegrid_74 -->
+                <div class="Question_mobilegrid_74_wrapper">
+                    <table id="Question_mobilegrid_74" class=" Question_mobilegrid_74" dsid="mobilegrid_74"
+                    name="mobilegrid_74" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_74_row_0">
+                            <!-- mobilegridcell_75 -->
+                            <td id="Question_mobilegridcell_75" name="mobilegridcell_75" class="Question_mobilegridcell_75"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_79 -->
+                                    <div name="mobilelabel_79" id="Question_mobilelabel_79" dsid="mobilelabel_79" data-role="appery_label"
+                                    class=' Question_mobilelabel_79 '>
+                                        Answered:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_76 -->
+                            <td id="Question_mobilegridcell_76" name="mobilegridcell_76" class="Question_mobilegridcell_76"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- answer2 -->
+                                    <div name="answer2" id="Question_answer2" dsid="answer2" data-role="appery_label"
+                                    class=' Question_answer2 '>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_88 -->
+                <div class="Question_mobilegrid_88_wrapper">
+                    <table id="Question_mobilegrid_88" class=" Question_mobilegrid_88" dsid="mobilegrid_88"
+                    name="mobilegrid_88" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_88_row_0">
+                            <!-- mobilegridcell_89 -->
+                            <td id="Question_mobilegridcell_89" name="mobilegridcell_89" class="Question_mobilegridcell_89"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_93 -->
+                                    <div name="mobilelabel_93" id="Question_mobilelabel_93" dsid="mobilelabel_93" data-role="appery_label"
+                                    class=' Question_mobilelabel_93 '>
+                                        Question 3:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_90 -->
+                            <td id="Question_mobilegridcell_90" name="mobilegridcell_90" class="Question_mobilegridcell_90"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_95 -->
+                                    <img class=" Question_mobileimage_95" src="files/views/assets/image/Dragon_Force_Anime.jpg"
+                                    id="Question_mobileimage_95" dsid="mobileimage_95" name="mobileimage_95" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilelabel_96 -->
+                <div name="mobilelabel_96" id="Question_mobilelabel_96" dsid="mobilelabel_96" data-role="appery_label"
+                class=' Question_mobilelabel_96 '>
+                    What is the name of the spell that gives the Dragon Slayer user scales?
+                </div>
+                <!-- mobilegroupedbuttons_101 -->
+                <div data-role="controlgroup" data-type='horizontal' data-mini="true" name="mobilegroupedbuttons_101"
+                id="Question_mobilegroupedbuttons_101" dsid="mobilegroupedbuttons_101" class="Question_mobilegroupedbuttons_101">
+                    <!-- mobilebutton_102 -->
+                    <a data-role="button" name="mobilebutton_102" dsid="mobilebutton_102" class='  Question_mobilebutton_102'
+                    id="Question_mobilebutton_102" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="9" reRender='mobilegroupedbuttons_101'>
+                    Dragon Rage
+                    </a>
+                    <!-- mobilebutton_103 -->
+                    <a data-role="button" name="mobilebutton_103" dsid="mobilebutton_103" class='  Question_mobilebutton_103'
+                    id="Question_mobilebutton_103" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="9" reRender='mobilegroupedbuttons_101'>
+                    Dragon Force
+                    </a>
+                    <!-- mobilebutton_104 -->
+                    <a data-role="button" name="mobilebutton_104" dsid="mobilebutton_104" class='  Question_mobilebutton_104'
+                    id="Question_mobilebutton_104" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="9" reRender='mobilegroupedbuttons_101'>
+                    Dragon Mode
+                    </a>
+                    <!-- mobilebutton_106 -->
+                    <a data-role="button" name="mobilebutton_106" dsid="mobilebutton_106" class='  Question_mobilebutton_106'
+                    id="Question_mobilebutton_106" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="9" reRender='mobilegroupedbuttons_101'>
+                    Dragon Power
+                    </a>
+                </div>
+                <!-- mobilegrid_107 -->
+                <div class="Question_mobilegrid_107_wrapper">
+                    <table id="Question_mobilegrid_107" class=" Question_mobilegrid_107" dsid="mobilegrid_107"
+                    name="mobilegrid_107" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_107_row_0">
+                            <!-- mobilegridcell_108 -->
+                            <td id="Question_mobilegridcell_108" name="mobilegridcell_108" class="Question_mobilegridcell_108"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_113 -->
+                                    <div name="mobilelabel_113" id="Question_mobilelabel_113" dsid="mobilelabel_113"
+                                    data-role="appery_label" class=' Question_mobilelabel_113 '>
+                                        Answered:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_109 -->
+                            <td id="Question_mobilegridcell_109" name="mobilegridcell_109" class="Question_mobilegridcell_109"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- answer3 -->
+                                    <div name="answer3" id="Question_answer3" dsid="answer3" data-role="appery_label"
+                                    class=' Question_answer3 '>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_114 -->
+                <div class="Question_mobilegrid_114_wrapper">
+                    <table id="Question_mobilegrid_114" class=" Question_mobilegrid_114" dsid="mobilegrid_114"
+                    name="mobilegrid_114" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_114_row_0">
+                            <!-- mobilegridcell_115 -->
+                            <td id="Question_mobilegridcell_115" name="mobilegridcell_115" class="Question_mobilegridcell_115"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_119 -->
+                                    <div name="mobilelabel_119" id="Question_mobilelabel_119" dsid="mobilelabel_119"
+                                    data-role="appery_label" class=' Question_mobilelabel_119 '>
+                                        Question 4:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_116 -->
+                            <td id="Question_mobilegridcell_116" name="mobilegridcell_116" class="Question_mobilegridcell_116"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_120 -->
+                                    <img class=" Question_mobileimage_120" src="files/views/assets/image/Carla_wektor.png"
+                                    id="Question_mobileimage_120" dsid="mobileimage_120" name="mobileimage_120" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilelabel_125 -->
+                <div name="mobilelabel_125" id="Question_mobilelabel_125" dsid="mobilelabel_125"
+                data-role="appery_label" class=' Question_mobilelabel_125 '>
+                    What is the name of the Exceed that is with Wendy?
+                </div>
+                <!-- mobilegroupedbuttons_121 -->
+                <div data-role="controlgroup" data-type='horizontal' data-mini="true" name="mobilegroupedbuttons_121"
+                id="Question_mobilegroupedbuttons_121" dsid="mobilegroupedbuttons_121" class="Question_mobilegroupedbuttons_121">
+                    <!-- mobilebutton_122 -->
+                    <a data-role="button" name="mobilebutton_122" dsid="mobilebutton_122" class='  Question_mobilebutton_122'
+                    id="Question_mobilebutton_122" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="10" reRender='mobilegroupedbuttons_121'>
+                    Carla
+                    </a>
+                    <!-- mobilebutton_123 -->
+                    <a data-role="button" name="mobilebutton_123" dsid="mobilebutton_123" class='  Question_mobilebutton_123'
+                    id="Question_mobilebutton_123" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="10" reRender='mobilegroupedbuttons_121'>
+                    Charla
+                    </a>
+                    <!-- mobilebutton_124 -->
+                    <a data-role="button" name="mobilebutton_124" dsid="mobilebutton_124" class='  Question_mobilebutton_124'
+                    id="Question_mobilebutton_124" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="10" reRender='mobilegroupedbuttons_121'>
+                    Carlla
+                    </a>
+                </div>
+                <!-- mobilegrid_126 -->
+                <div class="Question_mobilegrid_126_wrapper">
+                    <table id="Question_mobilegrid_126" class=" Question_mobilegrid_126" dsid="mobilegrid_126"
+                    name="mobilegrid_126" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_126_row_0">
+                            <!-- mobilegridcell_127 -->
+                            <td id="Question_mobilegridcell_127" name="mobilegridcell_127" class="Question_mobilegridcell_127"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_131 -->
+                                    <div name="mobilelabel_131" id="Question_mobilelabel_131" dsid="mobilelabel_131"
+                                    data-role="appery_label" class=' Question_mobilelabel_131 '>
+                                        Answered:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_128 -->
+                            <td id="Question_mobilegridcell_128" name="mobilegridcell_128" class="Question_mobilegridcell_128"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- answer4 -->
+                                    <div name="answer4" id="Question_answer4" dsid="answer4" data-role="appery_label"
+                                    class=' Question_answer4 '>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_169 -->
+                <div class="Question_mobilegrid_169_wrapper">
+                    <table id="Question_mobilegrid_169" class=" Question_mobilegrid_169" dsid="mobilegrid_169"
+                    name="mobilegrid_169" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_169_row_0">
+                            <!-- mobilegridcell_170 -->
+                            <td id="Question_mobilegridcell_170" name="mobilegridcell_170" class="Question_mobilegridcell_170"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_174 -->
+                                    <div name="mobilelabel_174" id="Question_mobilelabel_174" dsid="mobilelabel_174"
+                                    data-role="appery_label" class=' Question_mobilelabel_174 '>
+                                        Question 5:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_171 -->
+                            <td id="Question_mobilegridcell_171" name="mobilegridcell_171" class="Question_mobilegridcell_171"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_175 -->
+                                    <img class=" Question_mobileimage_175" src="files/views/assets/image/lamia_scale_seal_by_tseon-d34l56g.jpg"
+                                    id="Question_mobileimage_175" dsid="mobileimage_175" name="mobileimage_175" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilelabel_176 -->
+                <div name="mobilelabel_176" id="Question_mobilelabel_176" dsid="mobilelabel_176"
+                data-role="appery_label" class=' Question_mobilelabel_176 '>
+                    What guild does this symbol belong to?
+                </div>
+                <!-- mobilegroupedbuttons_177 -->
+                <div data-role="controlgroup" data-type='horizontal' data-mini="true" name="mobilegroupedbuttons_177"
+                id="Question_mobilegroupedbuttons_177" dsid="mobilegroupedbuttons_177" class="Question_mobilegroupedbuttons_177">
+                    <!-- mobilebutton_178 -->
+                    <a data-role="button" name="mobilebutton_178" dsid="mobilebutton_178" class='  Question_mobilebutton_178'
+                    id="Question_mobilebutton_178" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="18" reRender='mobilegroupedbuttons_177'>
+                    Mermaid Heel
+                    </a>
+                    <!-- mobilebutton_179 -->
+                    <a data-role="button" name="mobilebutton_179" dsid="mobilebutton_179" class='  Question_mobilebutton_179'
+                    id="Question_mobilebutton_179" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="18" reRender='mobilegroupedbuttons_177'>
+                    Lamia Scale
+                    </a>
+                    <!-- mobilebutton_180 -->
+                    <a data-role="button" name="mobilebutton_180" dsid="mobilebutton_180" class='  Question_mobilebutton_180'
+                    id="Question_mobilebutton_180" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="18" reRender='mobilegroupedbuttons_177'>
+                    Twilight Ogre
+                    </a>
+                </div>
+                <!-- mobilegrid_181 -->
+                <div class="Question_mobilegrid_181_wrapper">
+                    <table id="Question_mobilegrid_181" class=" Question_mobilegrid_181" dsid="mobilegrid_181"
+                    name="mobilegrid_181" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_181_row_0">
+                            <!-- mobilegridcell_182 -->
+                            <td id="Question_mobilegridcell_182" name="mobilegridcell_182" class="Question_mobilegridcell_182"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_288 -->
+                                    <div name="mobilelabel_288" id="Question_mobilelabel_288" dsid="mobilelabel_288"
+                                    data-role="appery_label" class=' Question_mobilelabel_288 '>
+                                        Answered:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_183 -->
+                            <td id="Question_mobilegridcell_183" name="mobilegridcell_183" class="Question_mobilegridcell_183"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- answer5 -->
+                                    <div name="answer5" id="Question_answer5" dsid="answer5" data-role="appery_label"
+                                    class=' Question_answer5 '>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_186 -->
+                <div class="Question_mobilegrid_186_wrapper">
+                    <table id="Question_mobilegrid_186" class=" Question_mobilegrid_186" dsid="mobilegrid_186"
+                    name="mobilegrid_186" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_186_row_0">
+                            <!-- mobilegridcell_187 -->
+                            <td id="Question_mobilegridcell_187" name="mobilegridcell_187" class="Question_mobilegridcell_187"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_191 -->
+                                    <div name="mobilelabel_191" id="Question_mobilelabel_191" dsid="mobilelabel_191"
+                                    data-role="appery_label" class=' Question_mobilelabel_191 '>
+                                        Question 6:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_188 -->
+                            <td id="Question_mobilegridcell_188" name="mobilegridcell_188" class="Question_mobilegridcell_188"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_192 -->
+                                    <img class=" Question_mobileimage_192" src="files/views/assets/image/Blue-FT-Logo-fairy-tail-9950163-1440-900.jpg"
+                                    id="Question_mobileimage_192" dsid="mobileimage_192" name="mobileimage_192" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilelabel_193 -->
+                <div name="mobilelabel_193" id="Question_mobilelabel_193" dsid="mobilelabel_193"
+                data-role="appery_label" class=' Question_mobilelabel_193 '>
+                    What is the name of the first episode of Fairy Tail?
+                </div>
+                <!-- mobilegroupedbuttons_194 -->
+                <div data-role="controlgroup" data-type='horizontal' data-mini="true" name="mobilegroupedbuttons_194"
+                id="Question_mobilegroupedbuttons_194" dsid="mobilegroupedbuttons_194" class="Question_mobilegroupedbuttons_194">
+                    <!-- mobilebutton_195 -->
+                    <a data-role="button" name="mobilebutton_195" dsid="mobilebutton_195" class='  Question_mobilebutton_195'
+                    id="Question_mobilebutton_195" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="19" reRender='mobilegroupedbuttons_194'>
+                    &quot;A Fairy Tail Wizard&quot;
+                    </a>
+                    <!-- mobilebutton_196 -->
+                    <a data-role="button" name="mobilebutton_196" dsid="mobilebutton_196" class='  Question_mobilebutton_196'
+                    id="Question_mobilebutton_196" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="19" reRender='mobilegroupedbuttons_194'>
+                    &quot;Fairies in the Wind&quot;
+                    </a>
+                    <!-- mobilebutton_197 -->
+                    <a data-role="button" name="mobilebutton_197" dsid="mobilebutton_197" class='  Question_mobilebutton_197'
+                    id="Question_mobilebutton_197" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="19" reRender='mobilegroupedbuttons_194'>
+                    &quot;The Fairy Tail&quot;
+                    </a>
+                </div>
+                <!-- mobilegrid_198 -->
+                <div class="Question_mobilegrid_198_wrapper">
+                    <table id="Question_mobilegrid_198" class=" Question_mobilegrid_198" dsid="mobilegrid_198"
+                    name="mobilegrid_198" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_198_row_0">
+                            <!-- mobilegridcell_199 -->
+                            <td id="Question_mobilegridcell_199" name="mobilegridcell_199" class="Question_mobilegridcell_199"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_285 -->
+                                    <div name="mobilelabel_285" id="Question_mobilelabel_285" dsid="mobilelabel_285"
+                                    data-role="appery_label" class=' Question_mobilelabel_285 '>
+                                        Answered:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_200 -->
+                            <td id="Question_mobilegridcell_200" name="mobilegridcell_200" class="Question_mobilegridcell_200"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- answer6 -->
+                                    <div name="answer6" id="Question_answer6" dsid="answer6" data-role="appery_label"
+                                    class=' Question_answer6 '>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_203 -->
+                <div class="Question_mobilegrid_203_wrapper">
+                    <table id="Question_mobilegrid_203" class=" Question_mobilegrid_203" dsid="mobilegrid_203"
+                    name="mobilegrid_203" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_203_row_0">
+                            <!-- mobilegridcell_204 -->
+                            <td id="Question_mobilegridcell_204" name="mobilegridcell_204" class="Question_mobilegridcell_204"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_208 -->
+                                    <div name="mobilelabel_208" id="Question_mobilelabel_208" dsid="mobilelabel_208"
+                                    data-role="appery_label" class=' Question_mobilelabel_208 '>
+                                        Question 7:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_205 -->
+                            <td id="Question_mobilegridcell_205" name="mobilegridcell_205" class="Question_mobilegridcell_205"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_209 -->
+                                    <img class=" Question_mobileimage_209" src="files/views/assets/image/images_1386559714.jpg"
+                                    id="Question_mobileimage_209" dsid="mobileimage_209" name="mobileimage_209" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilelabel_210 -->
+                <div name="mobilelabel_210" id="Question_mobilelabel_210" dsid="mobilelabel_210"
+                data-role="appery_label" class=' Question_mobilelabel_210 '>
+                    What type of magic does Laxus use?
+                </div>
+                <!-- mobilegroupedbuttons_211 -->
+                <div data-role="controlgroup" data-type='horizontal' data-mini="true" name="mobilegroupedbuttons_211"
+                id="Question_mobilegroupedbuttons_211" dsid="mobilegroupedbuttons_211" class="Question_mobilegroupedbuttons_211">
+                    <!-- mobilebutton_212 -->
+                    <a data-role="button" name="mobilebutton_212" dsid="mobilebutton_212" class='  Question_mobilebutton_212'
+                    id="Question_mobilebutton_212" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="20" reRender='mobilegroupedbuttons_211'>
+                    Water
+                    </a>
+                    <!-- mobilebutton_213 -->
+                    <a data-role="button" name="mobilebutton_213" dsid="mobilebutton_213" class='  Question_mobilebutton_213'
+                    id="Question_mobilebutton_213" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="20" reRender='mobilegroupedbuttons_211'>
+                    Lightining
+                    </a>
+                    <!-- mobilebutton_214 -->
+                    <a data-role="button" name="mobilebutton_214" dsid="mobilebutton_214" class='  Question_mobilebutton_214'
+                    id="Question_mobilebutton_214" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="20" reRender='mobilegroupedbuttons_211'>
+                    Flame
+                    </a>
+                </div>
+                <!-- mobilegrid_215 -->
+                <div class="Question_mobilegrid_215_wrapper">
+                    <table id="Question_mobilegrid_215" class=" Question_mobilegrid_215" dsid="mobilegrid_215"
+                    name="mobilegrid_215" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_215_row_0">
+                            <!-- mobilegridcell_216 -->
+                            <td id="Question_mobilegridcell_216" name="mobilegridcell_216" class="Question_mobilegridcell_216"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_286 -->
+                                    <div name="mobilelabel_286" id="Question_mobilelabel_286" dsid="mobilelabel_286"
+                                    data-role="appery_label" class=' Question_mobilelabel_286 '>
+                                        Answered:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_217 -->
+                            <td id="Question_mobilegridcell_217" name="mobilegridcell_217" class="Question_mobilegridcell_217"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- answer7 -->
+                                    <div name="answer7" id="Question_answer7" dsid="answer7" data-role="appery_label"
+                                    class=' Question_answer7 '>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_220 -->
+                <div class="Question_mobilegrid_220_wrapper">
+                    <table id="Question_mobilegrid_220" class=" Question_mobilegrid_220" dsid="mobilegrid_220"
+                    name="mobilegrid_220" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_220_row_0">
+                            <!-- mobilegridcell_221 -->
+                            <td id="Question_mobilegridcell_221" name="mobilegridcell_221" class="Question_mobilegridcell_221"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_225 -->
+                                    <div name="mobilelabel_225" id="Question_mobilelabel_225" dsid="mobilelabel_225"
+                                    data-role="appery_label" class=' Question_mobilelabel_225 '>
+                                        Question 8:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_222 -->
+                            <td id="Question_mobilegridcell_222" name="mobilegridcell_222" class="Question_mobilegridcell_222"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_226 -->
+                                    <img class=" Question_mobileimage_226" src="files/views/assets/image/Lisanna_in_edolas.jpg"
+                                    id="Question_mobileimage_226" dsid="mobileimage_226" name="mobileimage_226" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilelabel_227 -->
+                <div name="mobilelabel_227" id="Question_mobilelabel_227" dsid="mobilelabel_227"
+                data-role="appery_label" class=' Question_mobilelabel_227 '>
+                    Who is this?
+                </div>
+                <!-- mobilegroupedbuttons_233 -->
+                <div data-role="controlgroup" data-type='horizontal' data-mini="true" name="mobilegroupedbuttons_233"
+                id="Question_mobilegroupedbuttons_233" dsid="mobilegroupedbuttons_233" class="Question_mobilegroupedbuttons_233">
+                    <!-- mobilebutton_234 -->
+                    <a data-role="button" name="mobilebutton_234" dsid="mobilebutton_234" class='  Question_mobilebutton_234'
+                    id="Question_mobilebutton_234" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="21" reRender='mobilegroupedbuttons_233'>
+                    Wendy Marvell
+                    </a>
+                    <!-- mobilebutton_235 -->
+                    <a data-role="button" name="mobilebutton_235" dsid="mobilebutton_235" class='  Question_mobilebutton_235'
+                    id="Question_mobilebutton_235" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="21" reRender='mobilegroupedbuttons_233'>
+                    Lisanna Strauss
+                    </a>
+                    <!-- mobilebutton_236 -->
+                    <a data-role="button" name="mobilebutton_236" dsid="mobilebutton_236" class='  Question_mobilebutton_236'
+                    id="Question_mobilebutton_236" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="21" reRender='mobilegroupedbuttons_233'>
+                    Mirajane Strauss
+                    </a>
+                </div>
+                <!-- mobilegrid_228 -->
+                <div class="Question_mobilegrid_228_wrapper">
+                    <table id="Question_mobilegrid_228" class=" Question_mobilegrid_228" dsid="mobilegrid_228"
+                    name="mobilegrid_228" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_228_row_0">
+                            <!-- mobilegridcell_229 -->
+                            <td id="Question_mobilegridcell_229" name="mobilegridcell_229" class="Question_mobilegridcell_229"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_284 -->
+                                    <div name="mobilelabel_284" id="Question_mobilelabel_284" dsid="mobilelabel_284"
+                                    data-role="appery_label" class=' Question_mobilelabel_284 '>
+                                        Answered:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_230 -->
+                            <td id="Question_mobilegridcell_230" name="mobilegridcell_230" class="Question_mobilegridcell_230"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- answer8 -->
+                                    <div name="answer8" id="Question_answer8" dsid="answer8" data-role="appery_label"
+                                    class=' Question_answer8 '>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_237 -->
+                <div class="Question_mobilegrid_237_wrapper">
+                    <table id="Question_mobilegrid_237" class=" Question_mobilegrid_237" dsid="mobilegrid_237"
+                    name="mobilegrid_237" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_237_row_0">
+                            <!-- mobilegridcell_238 -->
+                            <td id="Question_mobilegridcell_238" name="mobilegridcell_238" class="Question_mobilegridcell_238"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_242 -->
+                                    <div name="mobilelabel_242" id="Question_mobilelabel_242" dsid="mobilelabel_242"
+                                    data-role="appery_label" class=' Question_mobilelabel_242 '>
+                                        Question 9:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_239 -->
+                            <td id="Question_mobilegridcell_239" name="mobilegridcell_239" class="Question_mobilegridcell_239"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_246 -->
+                                    <img class=" Question_mobileimage_246" src="files/views/assets/image/images.jpg"
+                                    id="Question_mobileimage_246" dsid="mobileimage_246" name="mobileimage_246" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilelabel_247 -->
+                <div name="mobilelabel_247" id="Question_mobilelabel_247" dsid="mobilelabel_247"
+                data-role="appery_label" class=' Question_mobilelabel_247 '>
+                    What is the name of the this guild?
+                </div>
+                <!-- mobilegroupedbuttons_248 -->
+                <div data-role="controlgroup" data-type='horizontal' data-mini="true" name="mobilegroupedbuttons_248"
+                id="Question_mobilegroupedbuttons_248" dsid="mobilegroupedbuttons_248" class="Question_mobilegroupedbuttons_248">
+                    <!-- mobilebutton_249 -->
+                    <a data-role="button" name="mobilebutton_249" dsid="mobilebutton_249" class='  Question_mobilebutton_249'
+                    id="Question_mobilebutton_249" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="22" reRender='mobilegroupedbuttons_248'>
+                    Cait Shelter
+                    </a>
+                    <!-- mobilebutton_250 -->
+                    <a data-role="button" name="mobilebutton_250" dsid="mobilebutton_250" class='  Question_mobilebutton_250'
+                    id="Question_mobilebutton_250" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="22" reRender='mobilegroupedbuttons_248'>
+                    Phoenix Grave
+                    </a>
+                    <!-- mobilebutton_251 -->
+                    <a data-role="button" name="mobilebutton_251" dsid="mobilebutton_251" class='  Question_mobilebutton_251'
+                    id="Question_mobilebutton_251" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="22" reRender='mobilegroupedbuttons_248'>
+                    Blue Pegasus
+                    </a>
+                </div>
+                <!-- mobilegrid_252 -->
+                <div class="Question_mobilegrid_252_wrapper">
+                    <table id="Question_mobilegrid_252" class=" Question_mobilegrid_252" dsid="mobilegrid_252"
+                    name="mobilegrid_252" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_252_row_0">
+                            <!-- mobilegridcell_253 -->
+                            <td id="Question_mobilegridcell_253" name="mobilegridcell_253" class="Question_mobilegridcell_253"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_257 -->
+                                    <div name="mobilelabel_257" id="Question_mobilelabel_257" dsid="mobilelabel_257"
+                                    data-role="appery_label" class=' Question_mobilelabel_257 '>
+                                        Answered:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_254 -->
+                            <td id="Question_mobilegridcell_254" name="mobilegridcell_254" class="Question_mobilegridcell_254"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- answer9 -->
+                                    <div name="answer9" id="Question_answer9" dsid="answer9" data-role="appery_label"
+                                    class=' Question_answer9 '>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_264 -->
+                <div class="Question_mobilegrid_264_wrapper">
+                    <table id="Question_mobilegrid_264" class=" Question_mobilegrid_264" dsid="mobilegrid_264"
+                    name="mobilegrid_264" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_264_row_0">
+                            <!-- mobilegridcell_265 -->
+                            <td id="Question_mobilegridcell_265" name="mobilegridcell_265" class="Question_mobilegridcell_265"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_270 -->
+                                    <div name="mobilelabel_270" id="Question_mobilelabel_270" dsid="mobilelabel_270"
+                                    data-role="appery_label" class=' Question_mobilelabel_270 '>
+                                        Question 10:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_266 -->
+                            <td id="Question_mobilegridcell_266" name="mobilegridcell_266" class="Question_mobilegridcell_266"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_269 -->
+                                    <img class=" Question_mobileimage_269" src="files/views/assets/image/erza_scarlet___fairy_tail_312_by_hallow1791-d5ov7vl.png"
+                                    id="Question_mobileimage_269" dsid="mobileimage_269" name="mobileimage_269" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilelabel_275 -->
+                <div name="mobilelabel_275" id="Question_mobilelabel_275" dsid="mobilelabel_275"
+                data-role="appery_label" class=' Question_mobilelabel_275 '>
+                    What type of magic does Erza use?
+                </div>
+                <!-- mobilegroupedbuttons_271 -->
+                <div data-role="controlgroup" data-type='horizontal' data-mini="true" name="mobilegroupedbuttons_271"
+                id="Question_mobilegroupedbuttons_271" dsid="mobilegroupedbuttons_271" class="Question_mobilegroupedbuttons_271">
+                    <!-- mobilebutton_272 -->
+                    <a data-role="button" name="mobilebutton_272" dsid="mobilebutton_272" class='  Question_mobilebutton_272'
+                    id="Question_mobilebutton_272" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="23" reRender='mobilegroupedbuttons_271'>
+                    Requip
+                    </a>
+                    <!-- mobilebutton_273 -->
+                    <a data-role="button" name="mobilebutton_273" dsid="mobilebutton_273" class='  Question_mobilebutton_273'
+                    id="Question_mobilebutton_273" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="23" reRender='mobilegroupedbuttons_271'>
+                    Style Change
+                    </a>
+                    <!-- mobilebutton_274 -->
+                    <a data-role="button" name="mobilebutton_274" dsid="mobilebutton_274" class='  Question_mobilebutton_274'
+                    id="Question_mobilebutton_274" data-corners="true" x-apple-data-detectors="false"
+                    data-theme="a" tabindex="23" reRender='mobilegroupedbuttons_271'>
+                    Anger
+                    </a>
+                </div>
+                <!-- mobilegrid_276 -->
+                <div class="Question_mobilegrid_276_wrapper">
+                    <table id="Question_mobilegrid_276" class=" Question_mobilegrid_276" dsid="mobilegrid_276"
+                    name="mobilegrid_276" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Question_mobilegrid_276_row_0">
+                            <!-- mobilegridcell_277 -->
+                            <td id="Question_mobilegridcell_277" name="mobilegridcell_277" class="Question_mobilegridcell_277"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_283 -->
+                                    <div name="mobilelabel_283" id="Question_mobilelabel_283" dsid="mobilelabel_283"
+                                    data-role="appery_label" class=' Question_mobilelabel_283 '>
+                                        Answered:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_278 -->
+                            <td id="Question_mobilegridcell_278" name="mobilegridcell_278" class="Question_mobilegridcell_278"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- answer10 -->
+                                    <div name="answer10" id="Question_answer10" dsid="answer10" data-role="appery_label"
+                                    class=' Question_answer10 '>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilebutton_281 -->
+                <a data-role="button" name="mobilebutton_281" dsid="mobilebutton_281" class='  Question_mobilebutton_281'
+                id="Question_mobilebutton_281" data-corners="true" x-apple-data-detectors="false"
+                data-mini="false" data-theme="a" tabindex="24">
+                Submit
+                </a>
+            </div>
+        </div>
+    </body>
+
+</html>
